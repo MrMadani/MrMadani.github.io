@@ -33,7 +33,6 @@ git add -A && git commit -m "Update content" && git push
 Search `index.html` for `PLACEHOLDER` and `YOUR_` — every spot is marked. Yellow dashed boxes on
 the live page are placeholders too.
 
-- `YOUR_EMAIL@example.com` (contact button, AI-services CTA, footer)
 - `YOUR-LINKEDIN-HANDLE` (LinkedIn button)
 - Achievements in the Cybersecurity and Sales sections
 - Graduation year, Security+ year / verification link

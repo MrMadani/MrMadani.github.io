@@ -9,7 +9,7 @@ Live at **https://mrmadani.github.io/**. Static HTML/CSS, hosted free on GitHub 
 | `index.html` | All page content (hero, about, sections, contact) and SEO/Open Graph tags |
 | `styles.css` | Look and feel; colors are at the top under `:root` |
 | `favicon.svg` | Browser-tab icon |
-| `assets/profile.jpg` | Your headshot (add it; initials show until you do) |
+| `assets/profile.jpg` | Your headshot (to swap it, replace this file with a square image of the same name) |
 | `assets/og-image.png` | The preview image LinkedIn shows when you share the link |
 | `assets/apple-touch-icon.png` | iPhone home-screen icon |
 | `tools/` | Sources + script that regenerate the two PNGs above |
@@ -37,7 +37,6 @@ the live page are placeholders too.
 - `YOUR-LINKEDIN-HANDLE` (LinkedIn button)
 - Achievements in the Cybersecurity and Sales sections
 - Graduation year, Security+ year / verification link
-- `assets/profile.jpg` — your photo (square, ≥ 600×600)
 
 To remove a placeholder line you don't want, delete its whole `<li>...</li>` or `<p class="placeholder">` line.
 

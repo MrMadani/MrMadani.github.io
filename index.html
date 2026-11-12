@@ -61,10 +61,9 @@
           </div>
         </div>
         <div class="hero-photo">
-          <!-- PHOTO: replace assets/profile.jpg with your headshot (square, at least 600x600).
-               If the file is missing, your initials show instead. -->
+          <!-- PHOTO: assets/profile.jpg (square, at least 600x600). If it's missing, your initials show instead. -->
           <img src="assets/profile.jpg" alt="Portrait of Shahin" width="360" height="360"
-               onerror="this.remove()">
+               onload="this.parentNode.classList.add('has-photo')" onerror="this.remove()">
           <span class="photo-fallback" aria-hidden="true">S</span>
         </div>
       </div>

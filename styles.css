@@ -146,7 +146,11 @@ h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); line-height: 1.1; font-weight: 800; 
   font-family: 'JetBrains Mono', monospace; font-size: .75rem; text-transform: uppercase;
   letter-spacing: .06em; color: var(--accent); margin-bottom: 10px;
 }
-.edu h3 { font-size: 1.25rem; }
+.edu h3 { font-size: 1.2rem; }
+.edu .edu-next { margin-top: 18px; font-size: 1.05rem; }
+.cert-list { list-style: none; margin-top: 14px; display: grid; gap: 6px; }
+.cert-list li { color: var(--muted); font-size: .93rem; padding-left: 18px; position: relative; }
+.cert-list li::before { content: '▹'; position: absolute; left: 0; color: var(--accent); }
 .muted { color: var(--muted); }
 
 .highlights { list-style: none; margin-top: 28px; display: grid; gap: 10px; }

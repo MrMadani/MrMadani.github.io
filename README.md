@@ -30,14 +30,11 @@ git add -A && git commit -m "Update content" && git push
 
 ## Placeholders to fill in
 
-Search `index.html` for `PLACEHOLDER` and `YOUR_` — every spot is marked. Yellow dashed boxes on
-the live page are placeholders too.
+Search `index.html` for `PLACEHOLDER`. The only one left is the "Book a free workflow review"
+button, which emails you; point it at a booking link (e.g. Calendly) if you set one up.
 
-- `YOUR-LINKEDIN-HANDLE` (LinkedIn button)
-- Achievements in the Cybersecurity and Sales sections
-- Graduation year, Security+ year / verification link
-
-To remove a placeholder line you don't want, delete its whole `<li>...</li>` or `<p class="placeholder">` line.
+Content comes from Shahin_Madani_Resume.pdf. The resume has no graduation or certification
+years, so the site leaves them out too.
 
 ## Updating the LinkedIn preview
 

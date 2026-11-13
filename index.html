@@ -41,7 +41,7 @@
         <a href="#security">Security</a>
         <a href="#business">Sales</a>
         <a href="#automation">AI Automation</a>
-        <a href="#explorer">Explorer</a>
+        <a href="explorer/">Explorer</a>
         <a href="#contact" class="nav-cta">Contact</a>
       </nav>
     </div>
@@ -228,6 +228,17 @@
           </article>
         </div>
 
+        <div class="data-feature">
+          <p class="tag">Documents &amp; data</p>
+          <h3>Your paperwork, turned into a database your AI agent can use</h3>
+          <p>Sorting emails, PDFs and spreadsheets is tedious. We have AI read and organise them for you, build a searchable database with a short summary of every file, and sort it all so anything is easy to find.</p>
+          <ol class="data-steps">
+            <li>Sort</li><li>Database</li><li>AI summary</li><li>Your AI agent</li><li>Next steps</li>
+          </ol>
+          <p><strong>What makes us different:</strong> many tools stop at sorting documents. We connect your data to your own AI agent, so it can draft custom emails, follow up with potential clients and show you the overall picture: what to do with your data and how to win more business from it. Your data stays in your own accounts, with each agent given only the access it needs.</p>
+          <p class="family">My team and I know how to set this up and support you, so you can spend less time on paperwork and more time with your family.</p>
+        </div>
+
         <div class="why">
           <div>
             <h3>Built for the promotional products industry</h3>
@@ -251,33 +262,34 @@
             <h3>Ready to get hours back every week?</h3>
             <p>Book a free 30-minute call, bring one workflow, and we'll show you how we'd automate it.</p>
           </div>
-          <!-- Uses the Calendly link set in explorer.js (CALENDLY_URL); emails you until it's set. -->
+          <!-- Uses the Calendly link set in booking.js (CALENDLY_URL); emails you until it's set. -->
           <a class="btn btn-primary btn-lg js-book" href="mailto:shahinmadani2024@gmail.com?subject=AI%20automation%20workflow%20review">Book a free workflow review</a>
         </div>
       </div>
     </section>
 
-    <!-- ===== AUTOMATION EXPLORER (content lives in explorer.js) ===== -->
+    <!-- ===== AUTOMATION EXPLORER teaser (full tool lives in /explorer/) ===== -->
     <section id="explorer" class="section">
-      <div class="container">
-        <h2 class="section-title"><span class="num">05</span> Automation Explorer</h2>
-        <p class="section-lead">Pick your industry to see a typical workflow. Highlighted steps are ones we can automate. Click one to see how.</p>
-        <div class="ex-tabs" role="tablist" aria-label="Industries"></div>
-        <div id="ex-panel" class="ex-panel" role="tabpanel">
-          <div class="ex-head">
-            <p class="ex-intro"></p>
-            <p class="ex-stat"></p>
+      <div class="container teaser">
+        <div>
+          <h2 class="section-title"><span class="num">05</span> Automation Explorer</h2>
+          <p class="section-lead">Find your business and see, step by step, what AI can take off your team's plate: what changes, which tools are used and how much time it could save.</p>
+          <div class="teaser-chips">
+            <a href="explorer/#ecommerce">🛒 E-commerce</a>
+            <a href="explorer/#manufacturing">🏭 Manufacturing</a>
+            <a href="explorer/#promo">🎁 Promotional products</a>
+            <a href="explorer/#healthcare">🩺 Clinics</a>
+            <a href="explorer/#trades">🔧 Trades</a>
+            <a href="explorer/#services">💼 Services</a>
+            <a href="explorer/">+ 10 more</a>
           </div>
-          <ol class="ex-flow"></ol>
-          <div class="ex-legend" aria-hidden="true">
-            <span><i class="ex-key auto"></i>Can be automated (click for details)</span>
-            <span><i class="ex-key manual"></i>Stays with your team</span>
-          </div>
-          <div class="ex-card" hidden aria-live="polite"></div>
+          <a class="btn btn-primary btn-lg" href="explorer/">Open the Automation Explorer</a>
         </div>
-        <div class="ex-cta">
-          <p>Don't see your exact workflow? We'll map yours.</p>
-          <a class="btn btn-primary btn-lg js-book" href="mailto:shahinmadani2024@gmail.com?subject=Free%20automation%20audit">Book a free automation audit</a>
+        <div class="teaser-preview" aria-hidden="true">
+          <div><b>Win</b><i class="a"></i><i class="d"></i><i class="h"></i></div>
+          <div><b>Deliver</b><i class="d"></i><i class="a"></i><i class="h"></i><i class="a"></i></div>
+          <div><b>Get paid</b><i class="a"></i><i class="l"></i></div>
+          <div><b>Keep</b><i class="a"></i><i class="d"></i></div>
         </div>
       </div>
     </section>
@@ -328,7 +340,7 @@
     </div>
   </footer>
 
-  <script src="explorer.js"></script>
+  <script src="booking.js"></script>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Automation Explorer | See what AI can automate in your business</title>
+  <meta name="description" content="Pick your industry and see, step by step, which parts of your business AI can automate: what changes, which tools are used and how much time you could save.">
+  <link rel="canonical" href="https://mrmadani.github.io/explorer/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mrmadani.github.io/explorer/">
+  <meta property="og:title" content="Automation Explorer: see what AI can automate in your business">
+  <meta property="og:description" content="16 industries, broken down step by step. Find your business and see where AI saves you time.">
+  <meta property="og:image" content="https://mrmadani.github.io/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#0b1220">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="explorer.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="../" class="brand"><span class="brand-mark">S</span>Shahin</a>
+      <nav aria-label="Main">
+        <a href="../#about">About</a>
+        <a href="../#security">Security</a>
+        <a href="../#automation">AI Automation</a>
+        <a href="./" aria-current="page">Explorer</a>
+        <a href="../#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Intro + finder ===== -->
+    <section id="finder" class="ex-hero">
+      <div class="container">
+        <p class="eyebrow">Automation Explorer</p>
+        <h1>Find your business.<br><span class="accent">See what AI can take off your plate.</span></h1>
+        <p class="lead">Every business runs on the same four stages: win the customer, deliver, get paid, and keep them coming back. Pick yours to see which steps AI can handle, what changes, and how much time it could give back to your team.</p>
+
+        <div class="finder">
+          <label for="ind-search" class="finder-label">What kind of business do you run?</label>
+          <div class="search-wrap">
+            <span aria-hidden="true">⌕</span>
+            <input id="ind-search" type="search" autocomplete="off" placeholder="Try “dentist”, “HVAC”, “Shopify” or “law firm”">
+          </div>
+          <div id="ind-grid" class="ind-grid"></div>
+          <div id="ind-empty" class="ind-empty" hidden>
+            <p>No exact match. Most small businesses share the same core steps.</p>
+            <button id="ind-empty-btn" class="btn btn-ghost">Show the general small-business flow</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Selected industry ===== -->
+    <section id="workspace" class="workspace" hidden>
+      <div class="container">
+        <div class="ws-head">
+          <div class="ws-title">
+            <span id="ws-icon" class="ws-icon" aria-hidden="true"></span>
+            <div>
+              <h2 id="ws-name"></h2>
+              <p id="ws-intro"></p>
+            </div>
+          </div>
+          <button id="change-ind" class="btn btn-ghost">Change industry</button>
+        </div>
+        <div id="ws-stats" class="ws-stats"></div>
+
+        <div class="legend" aria-label="Legend">
+          <span><i class="lvl-key lvl-auto"></i>AI handles it</span>
+          <span><i class="lvl-key lvl-draft"></i>AI drafts, you approve</span>
+          <span><i class="lvl-key lvl-alert"></i>AI alerts you</span>
+          <span><i class="lvl-key lvl-human"></i>Stays human</span>
+          <span class="legend-hint">Click any step for the full breakdown</span>
+        </div>
+
+        <div id="flow" class="flow"></div>
+
+        <!-- Data foundation layer -->
+        <div class="data-layer">
+          <button id="data-toggle" class="data-bar" aria-expanded="false" aria-controls="data-panel">
+            <span class="data-icon" aria-hidden="true">🗂</span>
+            <span class="data-text">
+              <strong>Underneath it all: your business data</strong>
+              <span>Every email, PDF and spreadsheet sorted, turned into a searchable database and summarised by AI</span>
+            </span>
+            <span class="data-chev" aria-hidden="true">▾</span>
+          </button>
+          <div id="data-panel" class="data-panel" hidden>
+            <ol class="data-chain">
+              <li><strong>Sort</strong><span>AI reads and files every document</span></li>
+              <li><strong>Database</strong><span>Key details pulled into one place</span></li>
+              <li><strong>AI summary</strong><span>Each file explained in a line</span></li>
+              <li><strong>Your AI agent</strong><span>Drafts emails and follow-ups from it</span></li>
+              <li><strong>Next steps</strong><span>Shows where your next sale is</span></li>
+            </ol>
+            <div class="data-cols">
+              <div>
+                <h4>Documents we organise for <span id="data-industry"></span></h4>
+                <ul id="data-docs" class="data-docs"></ul>
+              </div>
+              <div>
+                <h4>Questions you could ask your data</h4>
+                <ul id="data-questions" class="data-questions"></ul>
+              </div>
+            </div>
+            <p class="data-diff"><strong>What makes us different:</strong> many tools stop at sorting files. We connect your documents to your own AI agent, so the same data drafts your emails, follows up with prospects and shows you where your next sale is coming from. Your data stays in your own accounts, with each agent given only the access it needs.</p>
+          </div>
+        </div>
+
+        <div class="ws-cta">
+          <div>
+            <h3>See this running on your own tools</h3>
+            <p>Book a free automation audit. Bring one workflow and we'll show you how we'd automate it, so you can spend less time on admin and more time with your family.</p>
+          </div>
+          <a class="btn btn-primary btn-lg js-book" href="mailto:shahinmadani2024@gmail.com?subject=Free%20automation%20audit">Book a free automation audit</a>
+        </div>
+        <p class="ws-disclaimer">Time savings are estimates for a typical business and will vary with your volume and tools.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Step breakdown -->
+  <dialog id="step-dialog" class="step-dialog" aria-labelledby="dlg-title">
+    <button id="dlg-close" class="dlg-close" aria-label="Close">×</button>
+    <div id="dlg-content"></div>
+    <div class="dlg-nav">
+      <button id="dlg-prev" class="btn btn-ghost">← Previous</button>
+      <span id="dlg-pos"></span>
+      <button id="dlg-next" class="btn btn-ghost">Next →</button>
+    </div>
+  </dialog>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> Shahin · <a href="mailto:shahinmadani2024@gmail.com">shahinmadani2024@gmail.com</a> · <a href="../">Home</a></p>
+    </div>
+  </footer>
+
+  <script src="explorer-data.js"></script>
+  <script src="explorer.js"></script>
+  <script src="../booking.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

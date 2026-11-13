@@ -46,7 +46,7 @@ h3 { font-weight: 600; letter-spacing: -.005em; }
 .center { text-align: center; }
 
 /* Small uppercase labels */
-.eyebrow, .tag, .sub-title, .num, .tools span, .process span {
+.eyebrow, .tag, .sub-title, .tools span, .process span {
   font-family: var(--sans); font-size: .74rem; font-weight: 600; letter-spacing: .14em;
   text-transform: uppercase; color: var(--warm);
 }
@@ -144,9 +144,6 @@ h1 { font-size: clamp(2.4rem, 5.2vw, 4rem); line-height: 1.06; font-weight: 500;
   margin-bottom: 26px; display: flex; flex-direction: column; gap: 10px;
 }
 .center .section-title { align-items: center; }
-/* Section numbers (01, 02...) stay in the HTML but are hidden. Delete this display rule to show them again. */
-.num { display: none; font-size: .72rem; }
-.num::after { content: ' —'; }
 .section-lead { color: var(--muted); font-size: 1.12rem; max-width: 720px; margin-bottom: 40px; }
 .center .section-lead { margin-left: auto; margin-right: auto; }
 .section p + p { margin-top: 16px; }

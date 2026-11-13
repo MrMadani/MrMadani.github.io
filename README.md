@@ -8,6 +8,7 @@ Live at **https://mrmadani.github.io/**. Static HTML/CSS, hosted free on GitHub 
 |---|---|
 | `index.html` | All page content (hero, about, sections, contact) and SEO/Open Graph tags |
 | `styles.css` | Look and feel; colors are at the top under `:root` |
+| `explorer.js` | Automation Explorer: industry workflows (edit the `INDUSTRIES` object) and your Calendly link (`CALENDLY_URL`) |
 | `favicon.svg` | Browser-tab icon |
 | `assets/profile.jpg` | Your headshot (to swap it, replace this file with a square image of the same name) |
 | `assets/og-image.png` | The preview image LinkedIn shows when you share the link |
@@ -30,8 +31,13 @@ git add -A && git commit -m "Update content" && git push
 
 ## Placeholders to fill in
 
-Search `index.html` for `PLACEHOLDER`. The only one left is the "Book a free workflow review"
-button, which emails you; point it at a booking link (e.g. Calendly) if you set one up.
+**Calendly:** open `explorer.js` and paste your scheduling link into `CALENDLY_URL` at the top
+(the `https://calendly.com/...` address inside Calendly's embed code). Both booking buttons then
+open the Calendly popup. Until it's set, they open an email to you.
+
+**Automation Explorer:** edit the `INDUSTRIES` object in `explorer.js`. Steps with an `auto`
+block are highlighted and clickable; steps with only a `name` are manual. Time-saved figures are
+estimates; adjust them to match what your team has actually measured.
 
 Content comes from Shahin_Madani_Resume.pdf. The resume has no graduation or certification
 years, so the site leaves them out too.

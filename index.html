@@ -41,6 +41,7 @@
         <a href="#security">Security</a>
         <a href="#business">Sales</a>
         <a href="#automation">AI Automation</a>
+        <a href="#explorer">Explorer</a>
         <a href="#contact" class="nav-cta">Contact</a>
       </nav>
     </div>
@@ -250,8 +251,33 @@
             <h3>Ready to get hours back every week?</h3>
             <p>Book a free 30-minute call, bring one workflow, and we'll show you how we'd automate it.</p>
           </div>
-          <!-- PLACEHOLDER: point this at your booking link (e.g. Calendly) or keep it as email. -->
-          <a class="btn btn-primary btn-lg" href="mailto:shahinmadani2024@gmail.com?subject=AI%20automation%20workflow%20review">Book a free workflow review</a>
+          <!-- Uses the Calendly link set in explorer.js (CALENDLY_URL); emails you until it's set. -->
+          <a class="btn btn-primary btn-lg js-book" href="mailto:shahinmadani2024@gmail.com?subject=AI%20automation%20workflow%20review">Book a free workflow review</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== AUTOMATION EXPLORER (content lives in explorer.js) ===== -->
+    <section id="explorer" class="section">
+      <div class="container">
+        <h2 class="section-title"><span class="num">05</span> Automation Explorer</h2>
+        <p class="section-lead">Pick your industry to see a typical workflow. Highlighted steps are ones we can automate. Click one to see how.</p>
+        <div class="ex-tabs" role="tablist" aria-label="Industries"></div>
+        <div id="ex-panel" class="ex-panel" role="tabpanel">
+          <div class="ex-head">
+            <p class="ex-intro"></p>
+            <p class="ex-stat"></p>
+          </div>
+          <ol class="ex-flow"></ol>
+          <div class="ex-legend" aria-hidden="true">
+            <span><i class="ex-key auto"></i>Can be automated (click for details)</span>
+            <span><i class="ex-key manual"></i>Stays with your team</span>
+          </div>
+          <div class="ex-card" hidden aria-live="polite"></div>
+        </div>
+        <div class="ex-cta">
+          <p>Don't see your exact workflow? We'll map yours.</p>
+          <a class="btn btn-primary btn-lg js-book" href="mailto:shahinmadani2024@gmail.com?subject=Free%20automation%20audit">Book a free automation audit</a>
         </div>
       </div>
     </section>
@@ -259,7 +285,7 @@
     <!-- ===== EDUCATION & CERTIFICATIONS ===== -->
     <section id="education" class="section">
       <div class="container">
-        <h2 class="section-title"><span class="num">05</span> Education &amp; certifications</h2>
+        <h2 class="section-title"><span class="num">06</span> Education &amp; certifications</h2>
         <div class="grid two">
           <article class="card edu">
             <p class="tag">Education</p>
@@ -285,7 +311,7 @@
     <!-- ===== CONTACT ===== -->
     <section id="contact" class="section alt">
       <div class="container narrow center">
-        <h2 class="section-title"><span class="num">06</span> Contact</h2>
+        <h2 class="section-title"><span class="num">07</span> Contact</h2>
         <p class="section-lead">Want to talk about security, partnerships or automating your workflows? I'd like to hear from you.</p>
         <div class="contact-links">
           <a class="btn btn-primary btn-lg" href="mailto:shahinmadani2024@gmail.com">✉ Email me</a>
@@ -302,6 +328,7 @@
     </div>
   </footer>
 
+  <script src="explorer.js"></script>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

@@ -18,7 +18,6 @@
   grid.innerHTML = INDUSTRIES.map(ind => {
     const ai = aiSteps(ind).length, all = steps(ind).length;
     return `<button class="ind-card" data-id="${ind.id}" aria-pressed="false">
-      <span class="ind-icon" aria-hidden="true">${ind.icon}</span>
       <span class="ind-name">${esc(ind.name)}</span>
       <span class="ind-meta">${ai} of ${all} steps can use AI</span>
     </button>`;
@@ -65,7 +64,6 @@
     const ind = current;
     const ai = aiSteps(ind);
     const quick = ai.filter(s => s.effort === 'quick');
-    $('#ws-icon').textContent = ind.icon;
     $('#ws-name').textContent = ind.name;
     $('#ws-intro').textContent = ind.intro;
     $('#ws-stats').innerHTML = `

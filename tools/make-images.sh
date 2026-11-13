@@ -6,7 +6,7 @@ CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 
 "$CHROME" --headless=new --disable-gpu --hide-scrollbars --window-size=1200,630 \
-  --screenshot="$ROOT/assets/og-image.png" "file://$ROOT/tools/og-card.html"
+  --virtual-time-budget=6000 --screenshot="$ROOT/assets/og-image.png" "file://$ROOT/tools/og-card.html"
 
 "$CHROME" --headless=new --disable-gpu --hide-scrollbars --window-size=180,180 \
   --screenshot="$ROOT/assets/apple-touch-icon.png" "file://$ROOT/tools/icon.html"

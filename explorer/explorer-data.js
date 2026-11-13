@@ -5,7 +5,7 @@
    LEVELS  : how much AI does on a step (the coloured label).
    INDUSTRIES: one entry per business type. Each has:
      id        short name used in links, e.g. mrmadani.github.io/explorer/#dental
-     name, icon, intro
+     name, intro
      keywords  extra words people might search for ("dentist", "hvac"...)
      stages    four lists of steps, in the same order as STAGES
      data      documents we organise + questions they could ask their data
@@ -46,7 +46,7 @@ const EFFORT = {
 const INDUSTRIES = [
   /* ------------------------------------------------------------------ */
   {
-    id: 'ecommerce', name: 'E-commerce', icon: '🛒',
+    id: 'ecommerce', name: 'E-commerce',
     intro: 'Online stores selling direct to customers on their own site or marketplaces.',
     keywords: ['shopify', 'amazon', 'online store', 'dtc', 'etsy', 'woocommerce', 'online shop', 'marketplace'],
     stages: [
@@ -125,7 +125,7 @@ const INDUSTRIES = [
 
   /* ------------------------------------------------------------------ */
   {
-    id: 'wholesale', name: 'Wholesale & distribution', icon: '📦',
+    id: 'wholesale', name: 'Wholesale & distribution',
     intro: 'B2B businesses buying in bulk and selling to retailers, resellers or contractors.',
     keywords: ['distributor', 'wholesale', 'b2b', 'supplier', 'reseller', 'inventory', 'warehouse', 'import', 'export'],
     stages: [
@@ -204,7 +204,7 @@ const INDUSTRIES = [
 
   /* ------------------------------------------------------------------ */
   {
-    id: 'manufacturing', name: 'Manufacturing', icon: '🏭',
+    id: 'manufacturing', name: 'Manufacturing',
     intro: 'Make-to-order and make-to-stock manufacturers, fabricators and machine shops.',
     keywords: ['factory', 'fabrication', 'machine shop', 'cnc', 'plant', 'industrial', 'oem', 'production'],
     stages: [
@@ -283,7 +283,7 @@ const INDUSTRIES = [
 
   /* ------------------------------------------------------------------ */
   {
-    id: 'textile', name: 'Textile & apparel', icon: '🧵',
+    id: 'textile', name: 'Textile & apparel',
     intro: 'Garment and fabric makers, sourcing offices and apparel brands working with factories.',
     keywords: ['garment', 'apparel', 'fabric', 'clothing', 'knitting', 'knitwear', 'fashion', 'sourcing', 'mill'],
     stages: [
@@ -357,7 +357,7 @@ const INDUSTRIES = [
 
   /* ------------------------------------------------------------------ */
   {
-    id: 'promo', name: 'Promotional products', icon: '🎁',
+    id: 'promo', name: 'Promotional products',
     intro: 'Distributors, suppliers and decorators of branded merchandise. This is the industry I work in every day.',
     keywords: ['promotional', 'promo', 'swag', 'branded merchandise', 'merch', 'asi', 'ppai', 'sage', 'decorator', 'screen printing', 'embroidery', 'printing'],
     stages: [
@@ -436,7 +436,7 @@ const INDUSTRIES = [
 
   /* ------------------------------------------------------------------ */
   {
-    id: 'services', name: 'Professional services', icon: '💼',
+    id: 'services', name: 'Professional services',
     intro: 'Agencies, consultants, IT providers, coaches and other client-service firms.',
     keywords: ['agency', 'consultant', 'consulting', 'marketing agency', 'it services', 'msp', 'coach', 'freelancer', 'architect', 'design studio'],
     stages: [
@@ -517,7 +517,7 @@ const INDUSTRIES = [
 
   /* ------------------------------------------------------------------ */
   {
-    id: 'accounting', name: 'Accounting & bookkeeping', icon: '🧾',
+    id: 'accounting', name: 'Accounting & bookkeeping',
     intro: 'CPAs, bookkeepers, tax preparers and payroll providers.',
     keywords: ['cpa', 'bookkeeper', 'bookkeeping', 'tax', 'accountant', 'payroll', 'tax preparer'],
     stages: [
@@ -584,7 +584,7 @@ const INDUSTRIES = [
 
   /* ------------------------------------------------------------------ */
   {
-    id: 'law', name: 'Law firms', icon: '⚖️',
+    id: 'law', name: 'Law firms',
     intro: 'Small and mid-size firms in family, immigration, personal injury, business and real estate law.',
     keywords: ['lawyer', 'attorney', 'legal', 'paralegal', 'immigration', 'personal injury', 'law office', 'solicitor'],
     stages: [
@@ -658,7 +658,7 @@ const INDUSTRIES = [
 
   /* ------------------------------------------------------------------ */
   {
-    id: 'healthcare', name: 'Healthcare & dental clinics', icon: '🩺',
+    id: 'healthcare', name: 'Healthcare & dental clinics',
     intro: 'Medical, dental, physio, chiropractic and therapy practices. Patient data needs extra care, so we build with privacy rules like HIPAA in mind.',
     keywords: ['doctor', 'dentist', 'dental', 'clinic', 'medical', 'physio', 'physiotherapy', 'chiropractor', 'therapy', 'med spa', 'veterinary', 'vet', 'practice'],
     stages: [
@@ -737,7 +737,7 @@ const INDUSTRIES = [
 
   /* ------------------------------------------------------------------ */
   {
-    id: 'realestate', name: 'Real estate', icon: '🏠',
+    id: 'realestate', name: 'Real estate',
     intro: 'Agents, brokerages and property managers.',
     keywords: ['realtor', 'broker', 'brokerage', 'property management', 'agent', 'leasing', 'mortgage', 'property', 'landlord'],
     stages: [
@@ -804,7 +804,7 @@ const INDUSTRIES = [
 
   /* ------------------------------------------------------------------ */
   {
-    id: 'trades', name: 'Home services & trades', icon: '🔧',
+    id: 'trades', name: 'Home services & trades',
     intro: 'HVAC, plumbing, electrical, cleaning, landscaping, roofing and other service businesses.',
     keywords: ['hvac', 'plumber', 'plumbing', 'electrician', 'electrical', 'cleaning', 'landscaping', 'roofing', 'pest control', 'handyman', 'painting', 'pool'],
     stages: [
@@ -876,7 +876,7 @@ const INDUSTRIES = [
 
   /* ------------------------------------------------------------------ */
   {
-    id: 'construction', name: 'Construction', icon: '🏗️',
+    id: 'construction', name: 'Construction',
     intro: 'General contractors, subcontractors, builders and remodelers.',
     keywords: ['contractor', 'general contractor', 'builder', 'remodeling', 'remodel', 'subcontractor', 'renovation', 'gc'],
     stages: [
@@ -948,7 +948,7 @@ const INDUSTRIES = [
 
   /* ------------------------------------------------------------------ */
   {
-    id: 'logistics', name: 'Logistics & 3PL', icon: '🚚',
+    id: 'logistics', name: 'Logistics & 3PL',
     intro: 'Freight brokers, trucking companies, forwarders, warehouses and fulfilment centres.',
     keywords: ['freight', 'trucking', '3pl', 'warehouse', 'fulfillment', 'fulfilment', 'forwarder', 'courier', 'carrier', 'shipping', 'broker'],
     stages: [
@@ -1020,7 +1020,7 @@ const INDUSTRIES = [
 
   /* ------------------------------------------------------------------ */
   {
-    id: 'restaurants', name: 'Restaurants & hospitality', icon: '🍽️',
+    id: 'restaurants', name: 'Restaurants & hospitality',
     intro: 'Restaurants, cafés, caterers, hotels and event venues.',
     keywords: ['restaurant', 'cafe', 'café', 'hotel', 'catering', 'caterer', 'bar', 'bakery', 'food truck', 'venue', 'events', 'food'],
     stages: [
@@ -1092,7 +1092,7 @@ const INDUSTRIES = [
 
   /* ------------------------------------------------------------------ */
   {
-    id: 'insurance', name: 'Insurance agencies', icon: '🛡️',
+    id: 'insurance', name: 'Insurance agencies',
     intro: 'Independent agencies and brokers for personal, commercial and benefits lines.',
     keywords: ['insurance', 'insurance agent', 'broker', 'benefits', 'p&c', 'life insurance', 'health insurance'],
     stages: [
@@ -1164,7 +1164,7 @@ const INDUSTRIES = [
 
   /* ------------------------------------------------------------------ */
   {
-    id: 'general', name: 'Other small business', icon: '🏪',
+    id: 'general', name: 'Other small business',
     intro: 'Don\'t see your industry? Most small businesses share these same steps.',
     keywords: ['small business', 'startup', 'other', 'nonprofit', 'non-profit', 'retail store', 'shop', 'my business', 'local business', 'gym', 'salon', 'school', 'training'],
     stages: [
